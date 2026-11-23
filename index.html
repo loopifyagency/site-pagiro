@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pagiro · Salon de coiffure mixte à Brest – coupe, couleur, brushing</title>
+  <meta name="description" content="Pagiro, salon de coiffure mixte au 2 rue d’Algésiras à Brest : coupes femme, homme et enfant, couleur, brushing, shampoing massant. Réservez en ligne ou au 02 98 44 23 66.">
+  <meta name="theme-color" content="#F4ECDF">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Pagiro">
+  <meta property="og:title" content="Pagiro · Salon de coiffure mixte à Brest">
+  <meta property="og:description" content="On écoute d’abord, on coupe ensuite. Coiffure mixte au 2 rue d’Algésiras, Brest. Réservation en ligne ou par téléphone.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var h = document.documentElement;
+      h.className = 'js';
+      try {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) h.className += ' reduced';
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/salon-miroirs.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Pagiro",
+    "description": "Salon de coiffure mixte à Brest : coupes femme, homme et enfant, couleur, brushing, shampoing massant.",
+    "telephone": "+33298442366",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 Rue Algésiras",
+      "postalCode": "29200",
+      "addressLocality": "Brest",
+      "addressCountry": "FR"
+    },
+    "hasMap": "https://maps.app.goo.gl/P1gsYH3jDUF8R9uu5",
+    "sameAs": ["https://www.planity.com/pagiro-29200-brest"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:30", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "08:30", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:30", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:30", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:30", "closes": "15:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- ============ PRÉCHARGEUR : coup de ciseaux ============ -->
+  <div class="loader" aria-hidden="true" data-loader>
+    <div class="loader__half loader__half--top">
+      <div class="loader__inner">
+        <span class="loader__place">Brest · coiffure mixte</span>
+        <span class="loader__word"><span class="loader__mask"><span class="loader__letters">Pagiro</span></span></span>
+        <span class="loader__count"><span data-count>0</span>%</span>
+      </div>
+    </div>
+    <div class="loader__half loader__half--bottom">
+      <div class="loader__inner">
+        <span class="loader__place">Brest · coiffure mixte</span>
+        <span class="loader__word"><span class="loader__mask"><span class="loader__letters">Pagiro</span></span></span>
+        <span class="loader__count"><span data-count>0</span>%</span>
+      </div>
+    </div>
+    <div class="loader__seam">
+      <span class="loader__line"></span>
+      <svg class="loader__scissors" viewBox="0 0 72 36" width="86" height="43" fill="none">
+        <g class="sc-a">
+          <circle cx="10" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+          <path d="M15.2 12.4 28 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M26 17.2 69 11.2 65 15.8 30 19.6z" fill="currentColor" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        </g>
+        <g class="sc-b">
+          <circle cx="10" cy="27" r="6" stroke="currentColor" stroke-width="2"/>
+          <path d="M15.2 23.6 28 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M26 18.8 69 24.8 65 20.2 30 16.4z" fill="currentColor" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
+
+  <!-- ============ EN-TÊTE ============ -->
+  <header class="header" data-header>
+    <a class="brand" href="#accueil" aria-label="Pagiro, retour en haut de page">
+      <svg class="brand__mark" viewBox="0 0 48 48" width="28" height="28" aria-hidden="true"><use href="#i-miroir"/></svg>
+      <span class="brand__name">Pagiro</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#salon">Le salon</a>
+      <a href="#prestations">Prestations</a>
+      <a href="#boutique">Boutique</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#avis">Avis</a>
+      <a href="#acces">Accès</a>
+    </nav>
+    <a class="btn btn--sm header__cta" data-magnetic href="https://www.planity.com/pagiro-29200-brest" target="_blank" rel="noopener">
+      <span class="btn__label">Prendre rendez-vous</span>
+    </a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+      <span class="sr-only">Ouvrir le menu</span>
+      <i></i><i></i>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" inert data-menu>
+    <nav class="menu__nav" aria-label="Menu mobile">
+      <a href="#salon"><span>Le salon</span></a>
+      <a href="#rendez-vous"><span>Votre rendez-vous</span></a>
+      <a href="#prestations"><span>Prestations</span></a>
+      <a href="#boutique"><span>Boutique</span></a>
+      <a href="#galerie"><span>Galerie</span></a>
+      <a href="#avis"><span>Avis</span></a>
+      <a href="#acces"><span>Accès</span></a>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--light" href="https://www.planity.com/pagiro-29200-brest" target="_blank" rel="noopener"><span class="btn__label">Prendre rendez-vous</span></a>
+      <a class="menu__tel" href="tel:+33298442366">02 98 44 23 66</a>
+      <p>2 rue d’Algésiras, 29200 Brest</p>
+    </div>
+  </div>
+
+  <main id="contenu">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="accueil" data-hero>
+      <div class="hero__bg" aria-hidden="true">
+        <svg class="hero__arches" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMax slice" data-layer="bg">
+          <g fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M200 1000V560A300 300 0 0 1 800 560V1000"/>
+            <path d="M130 1000V560A370 370 0 0 1 870 560V1000" opacity=".8"/>
+            <path d="M60 1000V560A440 440 0 0 1 940 560V1000" opacity=".6"/>
+            <path d="M-10 1000V560A510 510 0 0 1 1010 560V1000" opacity=".45"/>
+            <path d="M-80 1000V560A580 580 0 0 1 1080 560V1000" opacity=".3"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero__stage" data-layer="mid">
+        <div class="mirror mirror--arch mirror--hero" style="--ar:.76">
+          <div class="mirror__glass">
+            <img class="mirror__img" src="assets/img/salon-miroirs.webp" width="1120" height="748" alt="Poste de coiffage du salon Pagiro : quatre miroirs encadrés d’argent et un fauteuil acrylique violet" fetchpriority="high" decoding="async">
+            <span class="mirror__glare" aria-hidden="true"></span>
+            <span class="mirror__curtain" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__titlewrap">
+        <h1 class="hero__title" aria-label="Pagiro, salon de coiffure mixte à Brest" data-layer="title">
+          <span class="hero__word" data-split="chars" aria-hidden="true">Pagiro</span>
+        </h1>
+      </div>
+
+      <div class="hero__fore" aria-hidden="true">
+        <svg class="float float--scissors" viewBox="0 0 48 48" width="132" height="132" data-layer="fore" data-speed="1">
+          <g fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="14" cy="38" r="6"/><circle cx="34" cy="38" r="6"/>
+            <path d="M17.5 33.2 36 5"/><path d="M30.5 33.2 12 5"/><circle cx="24" cy="24" r="1.2"/>
+          </g>
+        </svg>
+        <svg class="float float--comb" viewBox="0 0 48 48" width="116" height="116" data-layer="fore" data-speed="1.7">
+          <g fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 10h36a2 2 0 0 1 2 2v6H4v-6a2 2 0 0 1 2-2z"/>
+            <path d="M8 18v18M13 18v18M18 18v18M23 18v18M28 18v18M33 18v18M38 18v18"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero__foot">
+        <div class="hero__intro" data-hero-in>
+          <p class="hero__lead">Salon de coiffure mixte, rue d’Algésiras. On écoute d’abord, on coupe ensuite, et vous repartez avec une coupe qui vous ressemble.</p>
+          <div class="hero__actions">
+            <a class="btn" data-magnetic href="https://www.planity.com/pagiro-29200-brest" target="_blank" rel="noopener">
+              <span class="btn__label">Prendre rendez-vous</span>
+            </a>
+            <a class="link-tel" href="tel:+33298442366">02&nbsp;98&nbsp;44&nbsp;23&nbsp;66</a>
+          </div>
+        </div>
+        <div class="hero__meta" data-hero-in>
+          <p class="status" data-status><span class="status__dot" aria-hidden="true"></span><span data-status-text>Horaires ci-dessous</span></p>
+          <p class="hero__addr">2 rue d’Algésiras · Brest</p>
+          <p class="hero__who">Femmes · Hommes · Enfants</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANDEAU : deux lames qui se croisent ============ -->
+    <section class="blades" aria-label="Mots-clés" data-blades>
+      <div class="blade blade--a" data-marquee="-1">
+        <div class="blade__track">
+          <ul class="blade__set">
+            <li>Coupe</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><use href="#i-ciseaux"/></svg></li>
+            <li>Couleur</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><use href="#i-ciseaux"/></svg></li>
+            <li>Brushing</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><use href="#i-ciseaux"/></svg></li>
+            <li>Shampoing massant</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><use href="#i-ciseaux"/></svg></li>
+            <li>Enfants bienvenus</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><use href="#i-ciseaux"/></svg></li>
+          </ul>
+          <ul class="blade__set" aria-hidden="true">
+            <li>Coupe</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34"><use href="#i-ciseaux"/></svg></li>
+            <li>Couleur</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34"><use href="#i-ciseaux"/></svg></li>
+            <li>Brushing</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34"><use href="#i-ciseaux"/></svg></li>
+            <li>Shampoing massant</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34"><use href="#i-ciseaux"/></svg></li>
+            <li>Enfants bienvenus</li><li class="sep"><svg viewBox="0 0 48 48" width="34" height="34"><use href="#i-ciseaux"/></svg></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blade blade--b" data-marquee="1" aria-hidden="true">
+        <div class="blade__track">
+          <ul class="blade__set">
+            <li>Coiffure mixte</li><li class="sep"><i></i></li>
+            <li>Brest</li><li class="sep"><i></i></li>
+            <li>Sur rendez-vous</li><li class="sep"><i></i></li>
+            <li>02 98 44 23 66</li><li class="sep"><i></i></li>
+          </ul>
+          <ul class="blade__set">
+            <li>Coiffure mixte</li><li class="sep"><i></i></li>
+            <li>Brest</li><li class="sep"><i></i></li>
+            <li>Sur rendez-vous</li><li class="sep"><i></i></li>
+            <li>02 98 44 23 66</li><li class="sep"><i></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MANIFESTE ============ -->
+    <section class="manifesto" id="salon" data-manifesto>
+      <div class="container manifesto__grid">
+        <div class="manifesto__text">
+          <h2 class="manifesto__title" data-words>
+            Chez Pagiro, <span class="pill" data-pill><img src="assets/img/detail-suspensions.webp" width="440" height="330" alt="Suspensions violettes du salon" loading="lazy"></span>
+            on écoute d’abord, on <span class="pill" data-pill><img src="assets/img/detail-fauteuil.webp" width="420" height="418" alt="Fauteuil acrylique violet" loading="lazy"></span>
+            coupe ensuite.
+          </h2>
+          <p class="manifesto__p" data-fade>Un salon lumineux aux miroirs encadrés d’argent, une équipe à taille humaine, des clients fidèles dont l’un vient depuis plus de quinze ans. Femmes, hommes, enfants : chacun repart avec une coupe qui lui ressemble, et le sourire en prime.</p>
+          <a class="arrow-link" href="#rendez-vous" data-fade>Voir comment se passe un rendez-vous <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <figure class="manifesto__fig" data-reveal-img>
+          <div class="arch-photo">
+            <img src="assets/img/detail-miroir-orne.webp" width="290" height="560" alt="Un des miroirs du salon, cadre argenté à décor en relief" loading="lazy" data-pimg>
+          </div>
+          <figcaption>Cadres argentés, lumière chaude : le salon, côté miroir.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ RENDEZ-VOUS PAS À PAS (section pinnée) ============ -->
+    <section class="story" id="rendez-vous" data-story>
+      <div class="story__sticky" data-story-pin>
+        <div class="story__grid">
+          <div class="story__text">
+            <h2 class="h2 story__title" data-split="words">Votre rendez-vous, <em>pas à pas</em></h2>
+            <div class="story__steps">
+              <article class="step" data-step>
+                <figure class="step__fig"><img src="assets/img/facade.webp" width="1120" height="748" alt="Façade du salon Pagiro, rue d’Algésiras à Brest : enseigne et vitrine « Coiffure mixte »" loading="lazy"></figure>
+                <span class="step__n">01</span>
+                <h3 class="step__t">On pousse la porte.</h3>
+                <p>L’accueil commence par une vraie conversation : vos envies, votre quotidien, la nature de vos cheveux. Deux minutes d’écoute avant de sortir les ciseaux, et c’est ce que disent les clients : ici, on prend le temps.</p>
+              </article>
+              <article class="step" data-step>
+                <figure class="step__fig"><img src="assets/img/salon-vue.webp" width="1120" height="748" alt="Vue d’ensemble du salon : suspensions violettes, miroirs et postes de coiffage" loading="lazy"></figure>
+                <span class="step__n">02</span>
+                <h3 class="step__t">Le fauteuil massant.</h3>
+                <p>Le shampoing se fait dans un fauteuil massant. Épaules qui se relâchent, gestes doux, cheveux prêts pour la coupe : la journée peut attendre.</p>
+              </article>
+              <article class="step" data-step>
+                <figure class="step__fig"><img src="assets/img/salon-postes.webp" width="1120" height="748" alt="Postes de coiffage : miroirs encadrés d’argent et fauteuils violets transparents" loading="lazy"></figure>
+                <span class="step__n">03</span>
+                <h3 class="step__t">Le coup de ciseaux.</h3>
+                <p>Précis, soigné, pensé pour votre repousse et votre coiffage du quotidien. On vous montre, on explique, on ajuste jusqu’à ce que le résultat vous plaise.</p>
+              </article>
+              <article class="step" data-step>
+                <figure class="step__fig"><img src="assets/img/detail-pot-brosses.webp" width="470" height="320" alt="Brosses rondes, sèche-cheveux vert et spray sur le plan de coiffage" loading="lazy"></figure>
+                <span class="step__n">04</span>
+                <h3 class="step__t">Le reflet.</h3>
+                <p>Brushing, coiffage, conseils de soin pour refaire le même résultat à la maison. Puis le moment que tout le monde attend : se regarder dans le miroir, et sourire.</p>
+              </article>
+            </div>
+            <div class="story__rail" aria-hidden="true">
+              <span class="story__rail-line"></span>
+              <svg class="story__rail-sc" viewBox="0 0 48 48" width="30" height="30"><use href="#i-ciseaux"/></svg>
+            </div>
+          </div>
+
+          <div class="story__visual">
+            <div class="mirror mirror--arch mirror--story" style="--ar:.8">
+              <div class="mirror__glass">
+                <img class="story__img" data-simg src="assets/img/facade.webp" width="1120" height="748" alt="" loading="lazy">
+                <img class="story__img" data-simg src="assets/img/salon-vue.webp" width="1120" height="748" alt="" loading="lazy">
+                <img class="story__img" data-simg src="assets/img/salon-postes.webp" width="1120" height="748" alt="" loading="lazy">
+                <img class="story__img" data-simg src="assets/img/detail-pot-brosses.webp" width="470" height="320" alt="" loading="lazy">
+                <span class="mirror__glare" aria-hidden="true"></span>
+              </div>
+            </div>
+            <span class="story__bignum" aria-hidden="true" data-bignum>01</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRESTATIONS (défilement horizontal piloté par le scroll) ============ -->
+    <section class="services" id="prestations" data-services>
+      <div class="services__pin" data-services-pin>
+        <div class="services__head container">
+          <h2 class="h2" data-split="words">Ce qu’on fait pour <em>vos cheveux</em></h2>
+          <p class="services__note">Tarifs et créneaux libres en direct sur <a class="u-link" href="https://www.planity.com/pagiro-29200-brest" target="_blank" rel="noopener">Planity</a>.</p>
+        </div>
+        <div class="services__rail">
+          <ul class="track" data-track>
+            <li class="panel panel--tall" data-tilt>
+              <svg class="panel__art" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+                <circle pathLength="1" cx="14" cy="38" r="6"/><circle pathLength="1" cx="34" cy="38" r="6"/><path pathLength="1" d="M17.5 33.2 36 5"/><path pathLength="1" d="M30.5 33.2 12 5"/><circle pathLength="1" cx="24" cy="24" r="1.2"/></g></svg>
+              <div class="panel__txt">
+                <h3>Coupe femme</h3>
+                <p>Longs, mi-longs ou courts : une coupe pensée pour votre visage, votre texture et votre façon de vous coiffer le matin.</p>
+              </div>
+              <span class="panel__glare" aria-hidden="true"></span>
+            </li>
+            <li class="panel panel--short panel--lin" data-tilt>
+              <svg class="panel__art" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M6 10h36a2 2 0 0 1 2 2v6H4v-6a2 2 0 0 1 2-2z"/><path pathLength="1" d="M8 18v18M13 18v18M18 18v18M23 18v18M28 18v18M33 18v18M38 18v18"/></g></svg>
+              <div class="panel__txt">
+                <h3>Coupe homme</h3>
+                <p>Nette, précise, facile à recoiffer d’un coup de peigne.</p>
+              </div>
+              <span class="panel__glare" aria-hidden="true"></span>
+            </li>
+            <li class="panel panel--tall panel--cacao" data-tilt>
+              <svg class="panel__art" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+                <circle pathLength="1" cx="24" cy="27" r="14"/><path pathLength="1" d="M21 13.5c-1-4 4-7 8-4.5 3 2-1 6-4.5 4.5"/><circle pathLength="1" cx="18.8" cy="26" r=".9"/><circle pathLength="1" cx="29.2" cy="26" r=".9"/><path pathLength="1" d="M19 32c2.8 3 7.2 3 10 0"/></g></svg>
+              <div class="panel__txt">
+                <h3>Coupe enfant</h3>
+                <p>Les petits sont les bienvenus, dès 1&nbsp;an. De la patience, de la douceur, et un enfant qui repart content.</p>
+              </div>
+              <span class="panel__glare" aria-hidden="true"></span>
+            </li>
+            <li class="panel panel--short panel--nacre" data-tilt>
+              <svg class="panel__art" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M24 4c8 10 13 16 13 23a13 13 0 0 1-26 0c0-7 5-13 13-23z"/><path pathLength="1" d="M17.5 29a7 7 0 0 0 5 6.5"/><path pathLength="1" d="M10 43c3.5-3 7 3 10.5 0s7 3 10.5 0 5-2 7-1.5"/></g></svg>
+              <div class="panel__txt">
+                <h3>Shampoing massant</h3>
+                <p>Fauteuil massant, gestes doux : un vrai temps de pause avant la coupe.</p>
+              </div>
+              <span class="panel__glare" aria-hidden="true"></span>
+            </li>
+            <li class="panel panel--tall panel--lin" data-tilt>
+              <svg class="panel__art" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+                <circle pathLength="1" cx="31" cy="17" r="8"/><path pathLength="1" d="M31 9V5M31 25v4M23 17h-4M39 17h4M36.7 11.3l2.8-2.8M25.3 11.3l-2.8-2.8M36.7 22.7l2.8 2.8M25.3 22.7l-2.8 2.8"/><rect pathLength="1" x="5.5" y="27.5" width="24" height="6" rx="3" transform="rotate(-45 17.5 30.5)"/></g></svg>
+              <div class="panel__txt">
+                <h3>Brushing &amp; coiffage</h3>
+                <p>Lisse, volume ou ondulations : la finition soignée, avec les gestes à retenir pour la refaire chez vous.</p>
+              </div>
+              <span class="panel__glare" aria-hidden="true"></span>
+            </li>
+            <li class="panel panel--short panel--nacre" data-tilt>
+              <svg class="panel__art" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+                <rect pathLength="1" x="10" y="19" width="28" height="22" rx="4"/><rect pathLength="1" x="12" y="10" width="24" height="9" rx="2"/><path pathLength="1" d="M17 25v10"/><path pathLength="1" d="M24 4v3"/></g></svg>
+              <div class="panel__txt">
+                <h3>Couleur &amp; soins</h3>
+                <p>Éclat, reflets, soins en profondeur : on choisit ensemble, avec les produits adaptés à vos cheveux.</p>
+              </div>
+              <span class="panel__glare" aria-hidden="true"></span>
+            </li>
+            <li class="panel panel--end">
+              <h3>Votre tour&nbsp;?</h3>
+              <p>Choisissez votre créneau en ligne, ou appelez le salon.</p>
+              <a class="btn" data-magnetic href="https://www.planity.com/pagiro-29200-brest" target="_blank" rel="noopener"><span class="btn__label">Réserver sur Planity</span></a>
+              <a class="link-tel" href="tel:+33298442366">02&nbsp;98&nbsp;44&nbsp;23&nbsp;66</a>
+            </li>
+          </ul>
+        </div>
+        <div class="services__bar" aria-hidden="true"><span data-services-bar></span></div>
+      </div>
+    </section>
+
+    <!-- ============ BOUTIQUE ============ -->
+    <section class="shop" id="boutique" data-shop>
+      <div class="container shop__grid">
+        <div class="shop__copy">
+          <h2 class="h2" data-split="words">La routine du salon, <em>à la maison</em></h2>
+          <p class="lead" data-fade>Sur les étagères du salon, la gamme Eleven Australia : quatre routines, quatre couleurs. Dites-nous comment sont vos cheveux, on vous indique laquelle choisir.</p>
+          <div class="picker" role="group" aria-label="Choisir une routine" data-fade>
+            <button class="picker__btn is-active" type="button" data-i="0" aria-pressed="true">Volume</button>
+            <button class="picker__btn" type="button" data-i="1" aria-pressed="false">Hydratation</button>
+            <button class="picker__btn" type="button" data-i="2" aria-pressed="false">Réparation</button>
+            <button class="picker__btn" type="button" data-i="3" aria-pressed="false">Anti-frisottis</button>
+          </div>
+          <div class="picker__out" aria-live="polite" data-fade>
+            <h3 data-pname>I Want Body</h3>
+            <p data-pdesc>Un après-shampoing léger pour donner du corps aux cheveux, sans les alourdir.</p>
+          </div>
+        </div>
+        <figure class="shop__fig" data-reveal-img>
+          <div class="mirror mirror--land">
+            <div class="mirror__glass">
+              <img src="assets/img/produits-eleven.webp" width="773" height="460" alt="Quatre flacons Eleven Australia alignés : I Want Body, Hydrate My Hair, Repair My Hair et Smooth Me Now" loading="lazy" data-pimg>
+              <span class="spot" aria-hidden="true" data-spot></span>
+              <span class="mirror__glare" aria-hidden="true"></span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ CHIFFRES : une phrase, des compteurs à rouleaux ============ -->
+    <section class="figures" data-figures>
+      <div class="container">
+        <p class="figures__text">
+          L’un de nos clients vient depuis plus de <span class="odo" data-odo="15" data-suffix="&nbsp;ans"></span>.
+          Le salon vous ouvre ses portes <span class="odo" data-odo="45,5" data-suffix="&nbsp;h"></span> par semaine.
+          Les tout-petits sont les bienvenus dès <span class="odo" data-odo="1" data-suffix="&nbsp;an"></span>
+          et <span class="odo" data-odo="4"></span> routines de soin vous attendent en boutique.
+        </p>
+        <p class="figures__note">Chiffres tirés des horaires du salon, des avis de ses clients et des produits exposés en salle.</p>
+      </div>
+    </section>
+
+    <!-- ============ GALERIE ============ -->
+    <section class="gallery" id="galerie" data-gallery>
+      <div class="container">
+        <h2 class="h2 gallery__title" data-split="words">Entrez, <em>regardez</em></h2>
+      </div>
+      <div class="gallery__grid container">
+        <div class="gcol gcol--a" data-speed="0.9">
+          <figure class="gitem gitem--land" data-tilt-soft data-gi><div class="gitem__frame"><img src="assets/img/salon-vue.webp" width="1120" height="748" alt="Vue d’ensemble du salon avec ses suspensions violettes et ses postes de coiffage" loading="lazy" data-pimg></div><figcaption>La salle, d’un coup d’œil</figcaption></figure>
+          <figure class="gitem gitem--sq" data-tilt-soft data-gi><div class="gitem__frame"><img src="assets/img/detail-fauteuil.webp" width="420" height="418" alt="Fauteuil acrylique violet devant un plan de coiffage blanc" loading="lazy" data-pimg></div><figcaption>Fauteuils acryliques violets</figcaption></figure>
+        </div>
+        <div class="gcol gcol--b" data-speed="-0.5">
+          <figure class="gitem gitem--tall" data-tilt-soft data-gi><div class="gitem__frame"><img src="assets/img/detail-miroir-orne.webp" width="290" height="560" alt="Miroir au cadre argenté orné et reflet de l’arrière-salon" loading="lazy" data-pimg></div><figcaption>Miroirs encadrés d’argent</figcaption></figure>
+          <figure class="gitem gitem--land" data-tilt-soft data-gi><div class="gitem__frame"><img src="assets/img/detail-suspensions.webp" width="440" height="330" alt="Deux suspensions violettes allumées au plafond du salon" loading="lazy" data-pimg></div><figcaption>Suspensions violettes</figcaption></figure>
+        </div>
+        <div class="gcol gcol--c" data-speed="1.2">
+          <figure class="gitem gitem--port" data-tilt-soft data-gi><div class="gitem__frame"><img src="assets/img/detail-vitrine.webp" width="430" height="548" alt="Vitrine du salon avec une affiche de coiffure et le numéro de téléphone" loading="lazy" data-pimg></div><figcaption>La vitrine, rue d’Algésiras</figcaption></figure>
+          <figure class="gitem gitem--land" data-tilt-soft data-gi><div class="gitem__frame"><img src="assets/img/salon-postes.webp" width="1120" height="748" alt="Rangée de postes de coiffage avec fauteuils violets transparents" loading="lazy" data-pimg></div><figcaption>Les postes de coiffage</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="cut" aria-hidden="true"><span class="cut__line"></span><svg class="cut__sc" viewBox="0 0 48 48" width="28" height="28"><use href="#i-ciseaux"/></svg></div>
+
+    <!-- ============ AVIS (paquet de cartes à glisser) ============ -->
+    <section class="reviews" id="avis" data-reviews aria-roledescription="carrousel" aria-label="Avis des clients">
+      <div class="container reviews__head">
+        <h2 class="h2" data-split="words">Ils en parlent <em>mieux que nous</em></h2>
+      </div>
+      <div class="deck" data-deck>
+        <figure class="rev" data-slide>
+          <svg class="rev__q" viewBox="0 0 48 36" width="56" height="42" aria-hidden="true"><path d="M2 20C2 9 9 3 19 2v6c-5 1-8 4-8 9h8v17H2zM27 20c0-11 7-17 17-18v6c-5 1-8 4-8 9h8v17H27z" fill="currentColor"/></svg>
+          <blockquote><p>C'était la première fois que je me rendais dans ce salon. La patronne est super pro, efficace, pétillante, joyeuse, gentille, dévouée à son salon et son métier. Je suis ressortie ravie de mon RDV. J'ai enfin trouvé ma nouvelle coiffeuse. Je recommande</p></blockquote>
+          <figcaption><span class="rev__av" aria-hidden="true">M</span><span class="rev__who"><strong>Marine Paris</strong></span></figcaption>
+        </figure>
+        <figure class="rev" data-slide>
+          <svg class="rev__q" viewBox="0 0 48 36" width="56" height="42" aria-hidden="true"><path d="M2 20C2 9 9 3 19 2v6c-5 1-8 4-8 9h8v17H2zM27 20c0-11 7-17 17-18v6c-5 1-8 4-8 9h8v17H27z" fill="currentColor"/></svg>
+          <blockquote><p>Un salon de coiffure parfait pour les enfants. J'ai amené mon fils de 1an se faire couper les cheveux là-bas, la coiffeuse a été top avec lui. Je reviendrai le faire coiffer dans ce salon.</p></blockquote>
+          <figcaption><span class="rev__av" aria-hidden="true">M</span><span class="rev__who"><strong>Marc-Anthony Zoubiri</strong></span></figcaption>
+        </figure>
+        <figure class="rev" data-slide>
+          <svg class="rev__q" viewBox="0 0 48 36" width="56" height="42" aria-hidden="true"><path d="M2 20C2 9 9 3 19 2v6c-5 1-8 4-8 9h8v17H2zM27 20c0-11 7-17 17-18v6c-5 1-8 4-8 9h8v17H27z" fill="currentColor"/></svg>
+          <blockquote>
+            <p>Sans doute le meilleur salon de coiffure de Brest, gentillesse naturelle de la coiffeuse, écoute et conseil, excellent coup de ciseaux… Et franchement le fauteuil massant lors du shampoing c’est vraiment le top.</p>
+            <p>Je suis ressorti du salon avec le sourire et une coupe encore meilleure que ce que j’avais espéré.<br>Je reviendrai sans hésitation.</p>
+          </blockquote>
+          <figcaption><span class="rev__av" aria-hidden="true">N</span><span class="rev__who"><strong>Nathalie A</strong></span></figcaption>
+        </figure>
+        <figure class="rev" data-slide>
+          <svg class="rev__q" viewBox="0 0 48 36" width="56" height="42" aria-hidden="true"><path d="M2 20C2 9 9 3 19 2v6c-5 1-8 4-8 9h8v17H2zM27 20c0-11 7-17 17-18v6c-5 1-8 4-8 9h8v17H27z" fill="currentColor"/></svg>
+          <blockquote><p>Un très agréable salon que je fréquente depuis plus de 15 ans . Une responsable et son employée aussi charmantes que compétentes l'une comme l'autre , très à l'écoute de vos souhaits , d'excellents conseils . Leur travail est très soigné , le rendu excellent . Je conseille vivement .</p></blockquote>
+          <figcaption><span class="rev__av" aria-hidden="true">J</span><span class="rev__who"><strong>Jean Louis Layec</strong></span></figcaption>
+        </figure>
+        <figure class="rev" data-slide>
+          <svg class="rev__q" viewBox="0 0 48 36" width="56" height="42" aria-hidden="true"><path d="M2 20C2 9 9 3 19 2v6c-5 1-8 4-8 9h8v17H2zM27 20c0-11 7-17 17-18v6c-5 1-8 4-8 9h8v17H27z" fill="currentColor"/></svg>
+          <blockquote><p>La patronne est l'employée sont vraiment sympas et compétentes, je n'ai jamais été déçu des prestations là-bas, un salon de coiffure qui gagne à être connu ! Je recommande vivement</p></blockquote>
+          <figcaption><span class="rev__av" aria-hidden="true">G</span><span class="rev__who"><strong>Gaëtan Le Duff</strong></span></figcaption>
+        </figure>
+      </div>
+      <div class="deck__ui container">
+        <button class="round" type="button" data-prev aria-label="Avis précédent"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="deck__meter" aria-hidden="true"><span data-deck-bar></span></div>
+        <p class="deck__count" aria-live="polite"><span data-deck-i>1</span>&nbsp;/&nbsp;5</p>
+        <button class="round" type="button" data-next aria-label="Avis suivant"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="deck__pause" type="button" data-pause aria-pressed="false">Mettre en pause</button>
+      </div>
+    </section>
+
+    <!-- ============ APPEL À L’ACTION ============ -->
+    <section class="cta" id="reserver" data-cta>
+      <svg class="cta__arches" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M200 1000V560A300 300 0 0 1 800 560V1000"/><path d="M130 1000V560A370 370 0 0 1 870 560V1000" opacity=".7"/><path d="M60 1000V560A440 440 0 0 1 940 560V1000" opacity=".45"/>
+        </g>
+      </svg>
+      <div class="container cta__inner">
+        <h2 class="cta__title" data-split="words">Votre place <em>vous attend.</em></h2>
+        <p class="cta__p" data-fade>Réservez en ligne en quelques clics, ou appelez-nous : on vous répond aux heures d’ouverture.</p>
+        <div class="cta__actions">
+          <a class="bigbtn" data-magnetic data-magnetic-strength=".45" href="https://www.planity.com/pagiro-29200-brest" target="_blank" rel="noopener"><span class="bigbtn__label">Réserver<br>mon créneau</span></a>
+          <a class="cta__tel" href="tel:+33298442366"><span class="cta__tel-l">Ou par téléphone</span><span class="cta__tel-n">02&nbsp;98&nbsp;44&nbsp;23&nbsp;66</span></a>
+        </div>
+        <svg class="cta__badge" viewBox="0 0 200 200" width="170" height="170" aria-hidden="true" data-badge>
+          <defs><path id="circ" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1 -156 0"/></defs>
+          <text><textPath href="#circ" startOffset="0" textLength="482" lengthAdjust="spacing">Réservez en ligne · Prenez rendez-vous ·</textPath></text>
+        </svg>
+      </div>
+    </section>
+
+    <div class="cut" aria-hidden="true"><span class="cut__line"></span><svg class="cut__sc" viewBox="0 0 48 48" width="28" height="28"><use href="#i-ciseaux"/></svg></div>
+
+    <!-- ============ NOUS TROUVER ============ -->
+    <section class="visit" id="acces" data-visit>
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <h2 class="h2" data-split="words">Nous <em>trouver</em></h2>
+          <address class="visit__addr" data-fade>
+            <a href="https://maps.app.goo.gl/P1gsYH3jDUF8R9uu5" target="_blank" rel="noopener">2 rue d’Algésiras<br>29200 Brest</a>
+          </address>
+          <p class="visit__tel" data-fade><a class="u-link" href="tel:+33298442366">02&nbsp;98&nbsp;44&nbsp;23&nbsp;66</a></p>
+          <p class="status status--lg" data-status data-fade><span class="status__dot" aria-hidden="true"></span><span data-status-text>Horaires ci-dessous</span></p>
+          <table class="hours" data-fade>
+            <caption class="sr-only">Horaires d’ouverture</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Lundi</th><td>9h30 – 18h30</td></tr>
+              <tr data-day="2"><th scope="row">Mardi</th><td>8h30 – 18h30</td></tr>
+              <tr data-day="3" class="is-closed"><th scope="row">Mercredi</th><td>Fermé</td></tr>
+              <tr data-day="4"><th scope="row">Jeudi</th><td>8h30 – 18h30</td></tr>
+              <tr data-day="5"><th scope="row">Vendredi</th><td>8h30 – 18h30</td></tr>
+              <tr data-day="6"><th scope="row">Samedi</th><td>8h30 – 15h00</td></tr>
+              <tr data-day="0" class="is-closed"><th scope="row">Dimanche</th><td>Fermé</td></tr>
+            </tbody>
+          </table>
+          <div class="visit__actions" data-fade>
+            <a class="btn" data-magnetic href="https://maps.app.goo.gl/P1gsYH3jDUF8R9uu5" target="_blank" rel="noopener"><span class="btn__label">Itinéraire</span></a>
+            <a class="btn btn--ghost" data-magnetic href="https://www.planity.com/pagiro-29200-brest" target="_blank" rel="noopener"><span class="btn__label">Prendre rendez-vous</span></a>
+          </div>
+        </div>
+        <div class="visit__map" data-reveal-img>
+          <div class="mirror mirror--map">
+            <div class="mirror__glass">
+              <iframe title="Carte Google Maps : Pagiro, 2 rue d’Algésiras, Brest" src="https://www.google.com/maps?q=2+Rue+Alg%C3%A9siras,+29200+Brest&amp;output=embed&amp;hl=fr" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="520" tabindex="-1"></iframe>
+              <a class="map-link" href="https://maps.app.goo.gl/P1gsYH3jDUF8R9uu5" target="_blank" rel="noopener"><span class="sr-only">Ouvrir l’itinéraire dans Google Maps (nouvel onglet)</span><span class="map-link__tag" aria-hidden="true">Ouvrir dans Google Maps <svg viewBox="0 0 24 24" width="16" height="16"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+              <span class="mirror__glare" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIED DE PAGE ============ -->
+  <footer class="footer" data-footer>
+    <div class="container footer__top">
+      <div class="footer__col">
+        <p class="footer__h">Pagiro</p>
+        <p>Salon de coiffure mixte<br>2 rue d’Algésiras<br>29200 Brest</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h">Contact</p>
+        <p><a class="u-link" href="tel:+33298442366">02&nbsp;98&nbsp;44&nbsp;23&nbsp;66</a><br><a class="u-link" href="https://www.planity.com/pagiro-29200-brest" target="_blank" rel="noopener">Réserver sur Planity</a></p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h">Naviguer</p>
+        <p><a class="u-link" href="#salon">Le salon</a> · <a class="u-link" href="#prestations">Prestations</a> · <a class="u-link" href="#boutique">Boutique</a><br><a class="u-link" href="#galerie">Galerie</a> · <a class="u-link" href="#avis">Avis</a> · <a class="u-link" href="#acces">Accès</a></p>
+      </div>
+      <button class="totop" type="button" data-top aria-label="Retour en haut de page"><svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true"><use href="#i-ciseaux"/></svg><span>Haut de page</span></button>
+    </div>
+    <p class="footer__giant" aria-hidden="true" data-giant>Pagiro</p>
+    <p class="footer__legal container">© <span data-year>2026</span> Pagiro · Salon de coiffure à Brest</p>
+  </footer>
+
+  <a class="fab" href="tel:+33298442366" aria-label="Appeler le salon Pagiro" data-fab>
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+    <span>Appeler</span>
+  </a>
+
+  <!-- ============ SPRITE D’ICÔNES DESSINÉES ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-ciseaux" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="14" cy="38" r="6"/><circle cx="34" cy="38" r="6"/><path d="M17.5 33.2 36 5"/><path d="M30.5 33.2 12 5"/><circle cx="24" cy="24" r="1.2" fill="currentColor"/></g></symbol>
+      <symbol id="i-miroir" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 45V19C6 9.5 14 3 24 3s18 6.5 18 16v26z"/><path d="M12 41V20c0-6 5-11 12-11s12 5 12 11v21"/><path d="M18 36 30 17" stroke-width="1.6"/></g></symbol>
+    </defs>
+  </svg>
+
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
