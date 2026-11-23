@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T09:39:57Z",
+  "title": "Design System: Pagiro",
+  "extensions": {
+    "colorMeta": {
+      "creme": {
+        "role": "neutral",
+        "displayName": "Crème",
+        "canonical": "#F4ECDF",
+        "tonalRamp": [
+          "#352A17",
+          "#604A27",
+          "#8D6B34",
+          "#BB8C41",
+          "#C7A56F",
+          "#D4BF9C",
+          "#E3D9C7",
+          "#F6F3EF"
+        ]
+      },
+      "nacre": {
+        "role": "neutral",
+        "displayName": "Blanc nacré",
+        "canonical": "#FFFDF8",
+        "tonalRamp": [
+          "#453407",
+          "#7E5D09",
+          "#BB8706",
+          "#FBB300",
+          "#F5C240",
+          "#F1D07F",
+          "#F2E2B8",
+          "#FAF6EB"
+        ]
+      },
+      "lin": {
+        "role": "neutral",
+        "displayName": "Beige lin",
+        "canonical": "#E6D6BD",
+        "tonalRamp": [
+          "#342918",
+          "#5E4929",
+          "#896938",
+          "#B68A45",
+          "#C4A472",
+          "#D2BE9E",
+          "#E2D8C8",
+          "#F6F3EF"
+        ]
+      },
+      "sable": {
+        "role": "secondary",
+        "displayName": "Sable doré",
+        "canonical": "#BE9F78",
+        "tonalRamp": [
+          "#31271B",
+          "#58462F",
+          "#806441",
+          "#A98352",
+          "#BB9E7B",
+          "#CCBAA4",
+          "#DFD6CB",
+          "#F5F3F0"
+        ]
+      },
+      "argent": {
+        "role": "secondary",
+        "displayName": "Argent",
+        "canonical": "#C4BEB2",
+        "tonalRamp": [
+          "#2A2822",
+          "#4B463C",
+          "#6C6555",
+          "#8E836D",
+          "#A79F8F",
+          "#BFBAB0",
+          "#D9D6D1",
+          "#F3F3F1"
+        ]
+      },
+      "cacao": {
+        "role": "primary",
+        "displayName": "Cacao",
+        "canonical": "#2A1C17",
+        "tonalRamp": [
+          "#2F221D",
+          "#553B32",
+          "#7B5446",
+          "#A26C59",
+          "#B58E80",
+          "#C9B0A7",
+          "#DED1CD",
+          "#F4F1F0"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Brun muted",
+        "canonical": "#5F4B3B",
+        "tonalRamp": [
+          "#2E251F",
+          "#514236",
+          "#765E4B",
+          "#9B7A60",
+          "#B09886",
+          "#C5B6AB",
+          "#DCD4CE",
+          "#F4F2F0"
+        ]
+      },
+      "orchidee": {
+        "role": "tertiary",
+        "displayName": "Orchidée",
+        "canonical": "#7A3C8A",
+        "tonalRamp": [
+          "#2D1A32",
+          "#512C5B",
+          "#753D84",
+          "#9B4CAF",
+          "#B077BE",
+          "#C5A2CE",
+          "#DCCAE1",
+          "#F4EFF5"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display-hero": {
+        "displayName": "Display hero",
+        "purpose": "Le mot « Pagiro » du hero, du préchargeur et du pied de page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titres de section, emphase en poids 300."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Titres de panneaux et d'étapes."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texte courant, mesure bornée."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Chapeaux sous les titres."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Boutons, pastilles, légendes."
+      }
+    },
+    "shadows": [
+      {
+        "name": "miroir",
+        "value": "0 2.4rem 3rem -1.6rem rgba(42,28,23,.4)",
+        "purpose": "Seule ombre du système : le cadre de miroir."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Entrées, survols, remplissages de boutons."
+      },
+      {
+        "name": "ease-in-out-expo",
+        "value": "cubic-bezier(.76, 0, .24, 1)",
+        "purpose": "Menu plein écran, préchargeur, rideaux."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablette",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Action de réservation : pilule cacao, remplissage sable au survol.",
+      "html": "<a class=\"ds-btn\" href=\"#\"><span>Prendre rendez-vous</span></a>",
+      "css": ".ds-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:.85em 1.75em;border-radius:999px;background:#2A1C17;color:#F4ECDF;border:1.5px solid #2A1C17;font:600 16px/1 'Hanken Grotesk',system-ui,sans-serif;text-decoration:none;overflow:hidden;isolation:isolate;transition:color .5s cubic-bezier(.16,1,.3,1)}.ds-btn::before{content:'';position:absolute;inset:-1px;z-index:-1;background:#BE9F78;border-radius:50% 50% 0 0/100% 100% 0 0;transform:translateY(101%);transition:transform .65s cubic-bezier(.16,1,.3,1),border-radius .65s cubic-bezier(.16,1,.3,1)}.ds-btn:hover,.ds-btn:focus-visible{color:#2A1C17}.ds-btn:hover::before,.ds-btn:focus-visible::before{transform:none;border-radius:0}.ds-btn:focus-visible{outline:2px solid #7A3C8A;outline-offset:3px}"
+    },
+    {
+      "name": "Bouton contour",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Action secondaire : même pilule, filet cacao.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\"><span>Itinéraire</span></a>",
+      "css": ".ds-btn-ghost{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:.85em 1.75em;border-radius:999px;background:transparent;color:#2A1C17;border:1.5px solid #2A1C17;font:600 16px/1 'Hanken Grotesk',system-ui,sans-serif;text-decoration:none;overflow:hidden;isolation:isolate}.ds-btn-ghost::before{content:'';position:absolute;inset:-1px;z-index:-1;background:#BE9F78;transform:translateY(101%);transition:transform .65s cubic-bezier(.16,1,.3,1)}.ds-btn-ghost:hover::before{transform:none}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "button-ghost",
+      "description": "Liens d'en-tête à soulignement qui glisse.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Le salon</a><a href=\"#\">Prestations</a><a href=\"#\">Boutique</a></nav>",
+      "css": ".ds-nav{display:flex;gap:28px;font:500 15px 'Hanken Grotesk',system-ui,sans-serif;color:#2A1C17}.ds-nav a{position:relative;text-decoration:none;padding:8px 0}.ds-nav a::after{content:'';position:absolute;left:0;right:0;bottom:2px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:100% 50%;transition:transform .55s cubic-bezier(.16,1,.3,1)}.ds-nav a:hover::after{transform:scaleX(1);transform-origin:0 50%}"
+    },
+    {
+      "name": "Pastille de statut",
+      "kind": "chip",
+      "refersTo": "status-pill",
+      "description": "Ouvert / fermé, calculé à l'heure de Paris.",
+      "html": "<p class=\"ds-status\"><span class=\"ds-dot\"></span>Ouvert · jusqu’à 18h30</p>",
+      "css": ".ds-status{display:inline-flex;align-items:center;gap:.6em;margin:0;padding:.5em 1em .5em .85em;border-radius:999px;background:#FFFDF8;border:1px solid rgba(190,159,120,.7);font:600 14px/1.2 'Hanken Grotesk',system-ui,sans-serif;color:#2A1C17}.ds-dot{width:9px;height:9px;border-radius:50%;background:#3F8A55}"
+    },
+    {
+      "name": "Sélecteur de routine",
+      "kind": "chip",
+      "refersTo": "button-ghost",
+      "description": "Pilule de choix ; l'état actif se remplit de cacao.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip is-on\">Volume</button><button class=\"ds-chip\">Hydratation</button></div>",
+      "css": ".ds-chips{display:flex;gap:10px}.ds-chip{min-height:44px;padding:.55em 1.15em;border-radius:999px;border:1.5px solid #2A1C17;background:transparent;color:#2A1C17;font:600 15px 'Hanken Grotesk',system-ui,sans-serif;cursor:pointer;transition:background-color .35s,color .35s}.ds-chip:hover{background:#E6D6BD}.ds-chip.is-on{background:#2A1C17;color:#F4ECDF}"
+    },
+    {
+      "name": "Panneau de prestation",
+      "kind": "card",
+      "refersTo": "service-panel",
+      "description": "Panneau du rail horizontal : art au trait, titre, texte, filet sable.",
+      "html": "<article class=\"ds-panel\"><svg viewBox=\"0 0 48 48\" width=\"96\" height=\"96\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\"><circle cx=\"14\" cy=\"38\" r=\"6\"/><circle cx=\"34\" cy=\"38\" r=\"6\"/><path d=\"M17.5 33.2 36 5M30.5 33.2 12 5\"/></g></svg><div><h3>Coupe femme</h3><p>Une coupe pensée pour votre visage et votre quotidien.</p></div></article>",
+      "css": ".ds-panel{display:flex;flex-direction:column;justify-content:space-between;gap:24px;width:280px;height:340px;padding:28px;border-radius:16px;background:#FFFDF8;border:1px solid rgba(190,159,120,.55);color:#2A1C17}.ds-panel h3{margin:0 0 8px;font:700 26px/1 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.03em}.ds-panel p{margin:0;font:400 16px/1.55 'Hanken Grotesk',system-ui,sans-serif;color:#5F4B3B}"
+    },
+    {
+      "name": "Carte d'avis",
+      "kind": "card",
+      "refersTo": "review-card",
+      "description": "Avis client, guillemet orchidée, auteur en monogramme.",
+      "html": "<figure class=\"ds-rev\"><svg viewBox=\"0 0 48 36\" width=\"40\" height=\"30\"><path d=\"M2 20C2 9 9 3 19 2v6c-5 1-8 4-8 9h8v17H2zM27 20c0-11 7-17 17-18v6c-5 1-8 4-8 9h8v17H27z\" fill=\"#7A3C8A\"/></svg><blockquote>Je suis ressortie ravie de mon RDV.</blockquote><figcaption><span>M</span><strong>Marine Paris</strong></figcaption></figure>",
+      "css": ".ds-rev{margin:0;width:420px;display:flex;flex-direction:column;gap:20px;padding:32px;border-radius:16px;background:#FFFDF8;border:1px solid rgba(190,159,120,.6);color:#2A1C17}.ds-rev blockquote{margin:0;font:500 20px/1.55 'Hanken Grotesk',system-ui,sans-serif}.ds-rev figcaption{display:flex;align-items:center;gap:12px;font:600 15px 'Hanken Grotesk',system-ui,sans-serif}.ds-rev figcaption span{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#2A1C17;color:#F4ECDF;font:700 18px 'Bricolage Grotesque',system-ui,sans-serif}"
+    },
+    {
+      "name": "Miroir",
+      "kind": "custom",
+      "refersTo": "service-panel",
+      "description": "Composant signature : cadre argenté perlé en arche, vitre, reflet.",
+      "html": "<div class=\"ds-mirror\"><div class=\"ds-glass\"><span class=\"ds-glare\"></span></div></div>",
+      "css": ".ds-mirror{--ar:.76;width:240px;aspect-ratio:.76;display:flex;padding:14px;border-radius:50% 50% 14px 14px/calc(50% * var(--ar)) calc(50% * var(--ar)) 14px 14px;background:linear-gradient(135deg,#F8F5EF 0%,#C4BEB2 20%,#EFECE5 36%,#9E988B 56%,#E8E4DB 76%,#B3ADA1 100%);box-shadow:0 2.4rem 3rem -1.6rem rgba(42,28,23,.4)}.ds-glass{position:relative;flex:1;overflow:hidden;border-radius:50% 50% 6px 6px/calc(50% * var(--ar)) calc(50% * var(--ar)) 6px 6px;background:#E6D6BD;box-shadow:0 0 0 1px rgba(42,28,23,.5),0 0 0 3px rgba(255,253,248,.75),inset 0 0 30px rgba(42,28,23,.16)}.ds-glare{position:absolute;inset:0;background:linear-gradient(105deg,transparent 36%,rgba(255,253,248,.55) 49%,rgba(255,253,248,.14) 55%,transparent 64%)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le Miroir",
+    "overview": "Pagiro est un salon lumineux aux miroirs encadrés d'argent, aux fauteuils violets translucides, sous une lumière chaude. Le site le montre comme le salon le fait : chaque image clé est vue à travers un miroir en arche, traversé par un reflet. La ligne de coupe en pointillés, où voyage une paire de ciseaux, sépare les scènes.\n\nChaleureux et professionnel : grands aplats de crème, nacre et lin, cacao pour le texte et les blocs sombres, argent froid pour les cadres, une touche d'orchidée pour les détails vivants.",
+    "keyCharacteristics": [
+      "Aplats crème, nacre, lin qui alternent ; deux blocs sombres",
+      "Cadres de miroir en arche à perlage pour les images clés",
+      "Bricolage Grotesque très contrasté (800 / 300) et Hanken Grotesk",
+      "Mouvement comme matière, jamais la même animation deux sections de suite"
+    ],
+    "rules": [
+      {
+        "name": "The Orchid Touch Rule",
+        "body": "L'orchidée occupe moins de 3 % de l'écran et ne porte jamais un bouton principal.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cream Is Pinned Rule",
+        "body": "Crème, beige et blanc sont imposés : la variation vient des aplats, pas d'un nouvel accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cool Silver Rule",
+        "body": "L'argent des cadres reste froid contre la chaleur du beige.",
+        "section": "colors"
+      },
+      {
+        "name": "The Weight Contrast Rule",
+        "body": "L'emphase est un saut de poids (700 vers 300), jamais un italique synthétique ni un dégradé.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Numbers Rule",
+        "body": "Horaires, compteurs et téléphone en chiffres tabulaires.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Shadow Rule",
+        "body": "Ombre pour le miroir, filet de 1 px pour tout le reste.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do garder crème, nacre et lin en grands aplats et réserver l'orchidée aux détails vivants.",
+      "Do montrer les images clés dans un miroir (cadre + reflet).",
+      "Do animer transform et opacity en courbes expo/power avec décalage, et prévoir la version sans mouvement.",
+      "Do écrire les textes à partir de ce que prouvent les avis, les photos et les horaires."
+    ],
+    "donts": [
+      "Don't mettre un surtitre au-dessus d'un titre, ni de dégradé dans le texte, ni d'ombre dure décalée.",
+      "Don't utiliser un glyphe Unicode comme icône.",
+      "Don't ajouter de grain feTurbulence ni de rayures répétées.",
+      "Don't inventer de chiffres, de tarifs ou d'avis.",
+      "Don't descendre sous -0,04 em d'espacement de lettres."
+    ]
+  }
+}
