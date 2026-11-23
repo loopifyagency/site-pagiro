@@ -12,6 +12,16 @@ python3 -m http.server 8000
 
 Puis ouvrir http://localhost:8000. Le dossier peut être déposé tel quel chez un hébergeur statique (Netlify, Vercel, GitHub Pages, OVH…).
 
+## Mise en ligne (GitHub Pages)
+
+Le site est publié par le workflow `.github/workflows/pages.yml` à chaque mise à jour de `main` (et à la demande, via l'onglet Actions → « Déploiement GitHub Pages » → Run workflow). Seuls `index.html` et `assets/` sont publiés.
+
+À faire une seule fois, dans le dépôt GitHub : **Settings → Pages → Build and deployment → Source : GitHub Actions**.
+
+Adresse du site : https://loopifyagency.github.io/site-pagiro/
+
+Tous les chemins du site sont relatifs, il fonctionne donc aussi bien dans ce sous-dossier que sur un nom de domaine propre (Settings → Pages → Custom domain).
+
 ## Structure
 
 ```
